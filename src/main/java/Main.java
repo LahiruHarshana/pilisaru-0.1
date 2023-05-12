@@ -10,13 +10,13 @@ import java.net.URL;
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
-        URL recource=getClass().getResource("lk/ijse/homewindow/interface/login/LoginForm.fxml");
+        URL recource=getClass().getResource("/view/login/LoginForm.fxml");
         assert recource != null;
         Parent parant= FXMLLoader.load(recource);
         Scene sense=new Scene(parant);
 
         primaryStage.setScene(sense);
-        primaryStage.getIcons().add(new Image("lk/ijse/homewindow/assepts/20230130_225918.png"));
+//        primaryStage.getIcons().add(new Image("lk/ijse/homewindow/assepts/20230130_225918.png"));
         primaryStage.setTitle("Pilisaru Management System");
         primaryStage.centerOnScreen();
         primaryStage.show();
