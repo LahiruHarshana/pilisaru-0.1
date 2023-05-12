@@ -1,15 +1,12 @@
 package pilisaru.controller;
 
 import com.fazecast.jSerialComm.*;
-import lk.ijse.homewindow.controller.sensorsController.GetValueController;
 
 import java.nio.charset.StandardCharsets;
 
 public class SensorCalss extends Thread{
 
     private int numRead;
-
-    GetValueController getValueController=new GetValueController();
 
    public void setArduino(){
 
@@ -59,7 +56,7 @@ public class SensorCalss extends Thread{
                        //Covert String value to Double
                        //Do other things-------
                        //System.out.println("Received -> " + S); // Print String
-                       GetValueController.getValue(S);
+//                       GetValueController.getValue(S);
                    }
                } catch (Exception e) {
                    e.printStackTrace();
