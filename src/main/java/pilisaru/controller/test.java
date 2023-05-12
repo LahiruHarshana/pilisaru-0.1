@@ -1,4 +1,4 @@
 package pilisaru.controller;
 
-public class updateController {
+public class test {
 }
