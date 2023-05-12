@@ -5,7 +5,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1366.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.homewindow.controller.ErrorFormController">
+<AnchorPane prefHeight="720.0" prefWidth="1366.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pilisaru.controller.ErrorFormController">
     <ImageView fitHeight="720.0" fitWidth="1366.0" layoutX="-7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-78.0" AnchorPane.topAnchor="0.0">
         <Image url="@../../assets/ErrorPage.png" />
     </ImageView>

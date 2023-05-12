@@ -11,5 +11,8 @@
         <module name="sample" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="pilisaru-0.1" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
