@@ -26,6 +26,13 @@ public class Navigation {
             case GET_SALARY -> initUi("salary/salaryForm.fxml");
             case UPDATE_SALARY -> initUi("salary/salaryUpdateForm.fxml");
             case LOGOUT -> initUi("login/LoginForm.fxml");
+            case ADD_VEH -> initUi("vehical/addVehicle.fxml");
+            case GET_VEH -> initUi("vehical/vehicleInformation.fxml");
+            case UPD_VEH  -> initUi("vehical/updateVehicle.fxml");
+            case ADD_Sale -> initUi("sales/addForm.fxml");
+            case GET_Sale -> initUi("sales/salesForm.fxml");
+            case UPD_HEALTH -> initUi("health/employeeForm.fxml");
+            case GET_HEALTH-> initUi("health/addForm.fxml");
         }
     }
     private static void initUi(String location) throws IOException {

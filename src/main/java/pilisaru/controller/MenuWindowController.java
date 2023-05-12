@@ -123,37 +123,37 @@ public class MenuWindowController {
     }
 
     @FXML
-    void btnVehicalAddOnAction(ActionEvent event) {
-
+    void btnVehicalAddOnAction(ActionEvent event) throws IOException {
+        Navigation.navigation(Rout.ADD_VEH,mainAncorPane);
     }
 
     @FXML
-    void btnVehicalGetInfoOnAction(ActionEvent event) {
-
+    void btnVehicalGetInfoOnAction(ActionEvent event) throws IOException {
+        Navigation.navigation(Rout.GET_VEH,mainAncorPane);
     }
 
     @FXML
-    void btnVehicalUpdateOnAction(ActionEvent event) {
-
+    void btnVehicalUpdateOnAction(ActionEvent event) throws IOException {
+        Navigation.navigation(Rout.UPD_VEH,mainAncorPane);
     }
 
     @FXML
-    void btnselesGetInfoOnAction(ActionEvent event) {
-
+    void btnselesGetInfoOnAction(ActionEvent event) throws IOException {
+        Navigation.navigation(Rout.ADD_Sale,mainAncorPane);
     }
 
     @FXML
-    void btnseleseAddDetailOnAction(ActionEvent event) {
-
+    void btnseleseAddDetailOnAction(ActionEvent event) throws IOException {
+        Navigation.navigation(Rout.GET_Sale,mainAncorPane);
     }
 
     @FXML
-    void menuHelthGetInfoOnAction(ActionEvent event) {
-
+    void menuHelthGetInfoOnAction(ActionEvent event) throws IOException {
+        Navigation.navigation(Rout.UPD_HEALTH,mainAncorPane);
     }
 
     @FXML
-    void menuHelthUpdateOnAction(ActionEvent event) {
-
+    void menuHelthUpdateOnAction(ActionEvent event) throws IOException {
+        Navigation.navigation(Rout.GET_HEALTH,mainAncorPane);
     }
 }
