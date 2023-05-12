@@ -35,6 +35,18 @@ public class Navigation {
             case GET_HEALTH-> initUi("health/addForm.fxml");
             case INVENTORY_COM_UP -> initUi("inventory/compost/compostUpdate.fxml");
             case INVENTORY_COM_GET -> initUi("inventory/compost/compostGetInfo.fxml");
+            case INVENTORY_ADD_EMP -> initUi("inventory/employeeEquipment/equipmentAdd.fxml");
+            case INVENTORY_DELETE_EMP -> initUi("inventory/employeeEquipment/equipentDelete.fxml");
+            case INVENTORY_UP_EMP -> initUi("inventory/employeeEquipment/employeeEqupmentUpdate.fxml");
+            case INVENTORY_CHEM_ADD -> initUi("inventory/chemcal/cemicalAdd.fxml");
+            case INVENTORY_CHEM_DELETE -> initUi("inventory/chemcal/cemicalDelete.fxml");
+            case INVENTORY_CHEM_UPDATE -> initUi("inventory/chemcal/cemicalUpdate.fxml");
+            case INVENTORY_SITE_VEHICLE_ADD -> initUi("inventory/siteVehicle/siteaddVehicle.fxml");
+            case INVENTORY_SITE_VEHICLE_DELETE -> initUi("inventory/siteVehicle/siteVehicleDelete.fxml");
+            case INVENTORY_SITE_VEHICLE_UP -> initUi("inventory/siteVehicle/siteVehicleDetailUpdate.fxml");
+            case INVENTORY_MACHINE_UP -> initUi("inventory/machine/machineUdate.fxml");
+            case INVENTORY_MACHINE_ADD -> initUi("inventory/machine/machineAdd.fxml");
+            case INVENTORY_MACHINE_DELETE -> initUi("inventory/machine/machineDelete.fxml");
         }
     }
     private static void initUi(String location) throws IOException {
