@@ -119,7 +119,7 @@ public class MenuWindowController {
 
     @FXML
     void btnSingOutOnAction(ActionEvent event) throws IOException {
-        Navigation.navigation(Rout.LOGOUT,root);
+        Navigation.navigation(Rout.LOGOUT, root);
     }
 
     @FXML

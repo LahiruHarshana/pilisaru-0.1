@@ -33,6 +33,8 @@ public class Navigation {
             case GET_Sale -> initUi("sales/salesForm.fxml");
             case UPD_HEALTH -> initUi("health/employeeForm.fxml");
             case GET_HEALTH-> initUi("health/addForm.fxml");
+            case INVENTORY_COM_UP -> initUi("inventory/compost/compostUpdate.fxml");
+            case INVENTORY_COM_GET -> initUi("inventory/compost/compostGetInfo.fxml");
         }
     }
     private static void initUi(String location) throws IOException {

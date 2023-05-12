@@ -1,13 +1,22 @@
 package pilisaru.controller;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.layout.AnchorPane;
+import pilisaru.util.Navigation;
+import pilisaru.util.Rout;
+
+import java.io.IOException;
 
 public class MaininventoryController {
-    public void btnInventoryCompostUpdateOnAction(ActionEvent event) {
-
+    @FXML
+    private AnchorPane inventoryPane;
+    public void btnInventoryCompostUpdateOnAction(ActionEvent event) throws IOException {
+        Navigation.navigation(Rout.INVENTORY_COM_UP, inventoryPane);
     }
 
-    public void btnInventoryCompostInformationOnAction(ActionEvent event) {
+    public void btnInventoryCompostInformationOnAction(ActionEvent event) throws IOException {
+        Navigation.navigation(Rout.INVENTORY_COM_GET, inventoryPane);
     }
 
     public void btnEmployeeEquipmentUpdateOnAction(ActionEvent event) {
