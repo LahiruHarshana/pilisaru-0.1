@@ -122,6 +122,14 @@
             <version>6.20.0</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.fazecast/jSerialComm -->
+        <dependency>
+            <groupId>com.fazecast</groupId>
+            <artifactId>jSerialComm</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+
+
     </dependencies>
 
 </project>
