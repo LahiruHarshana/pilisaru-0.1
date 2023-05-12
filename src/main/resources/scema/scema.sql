@@ -1,126 +1,89 @@
-
-DROP DATABASE ikmanRental;
-CREATE DATABASE ikmanRental;
-USE ikmanRental;
+DROP DATABASE pilisaru;
+CREATE DATABASE pilisaru;
+USE pilisaru;
 
 
 CREATE TABLE Admin(
-                      AdminNIC VARCHAR(60),
-                      FirsName VARCHAR(50),
-                      LastName VARCHAR(30),
-                      Gamil VARCHAR(30),
-                      Password VARCHAR(30),
-                      CONSTRAINT PRIMARY KEY (AdminNIC)
+                      UserName VARCHAR(60) PRIMARY KEY ,
+                      password VARCHAR(50)
 );
 
-CREATE TABLE Customer(
-                         CustomerNIC VARCHAR(30),
-                         Gamil VARCHAR(30),
-                         Contact VARCHAR(20),
+CREATE TABLE Employee(
+                         NIC VARCHAR(30) PRIMARY KEY ,
                          Name VARCHAR(30),
-                         AdminNIC VARCHAR(30),
-                         CONSTRAINT PRIMARY KEY (CustomerNIC),
-                         CONSTRAINT FOREIGN KEY(AdminNIC) REFERENCES Admin(AdminNIC)
-                             ON UPDATE CASCADE ON DELETE CASCADE
+                         Address VARCHAR(30)
 );
 
-CREATE TABLE Vehicle(
-                        VehicleNumber VARCHAR(20) PRIMARY KEY,
-                        Name VARCHAR(30) NOT NULL,
-                        Type VARCHAR(30),
-                        FuelToKm DECIMAL(10,2) NOT NULL,
-                        KMH INT(10)NOT NULL,
-                        Availability VARCHAR(30) NOT NULL,
-                        Status VARCHAR(10),
-                        Conditions VARCHAR(30)
+CREATE TABLE Health(
+                       NIC VARCHAR(30),
+                       Cost DECIMAL (10,2),
+                       Date date ,
+                       Chechups longblob,
+                       CONSTRAINT FOREIGN KEY(NIC) REFERENCES Employee(NIC)
 );
 
-CREATE TABLE Driver(
-                       DriverNIC VARCHAR(30) PRIMARY KEY,
-                       Gamil VARCHAR(40) NOT NULL,
-                       Name VARCHAR(30) NOT NULL,
-                       Gender VARCHAR(30) NOT NULL,
-                       Status VARCHAR(10)
+CREATE TABLE Inventory(
+                          Id VARCHAR(30) PRIMARY KEY,
+                          Name  VARCHAR (100)
 );
 
-CREATE TABLE Booking(
-                        BookingID VARCHAR(30) PRIMARY KEY,
-                        Status VARCHAR(20) NOT NULL,
-                        AmmountCost DECIMAL(10,2) NOT NULL,
-                        RequriedDate DATE,
-                        RideTO VARCHAR(30) NOT NULL,
-                        Distance VARCHAR(30) NOT NULL,
-                        CustomerNIC VARCHAR(30),
-                        CONSTRAINT FOREIGN KEY(CustomerNIC) REFERENCES Customer(CustomerNIC)
-                            ON UPDATE CASCADE ON DELETE CASCADE
+CREATE TABLE Compost(
+                        Id VARCHAR(30) PRIMARY KEY,
+                        Tea  DECIMAL (10,2) ,
+                        Coconut  DECIMAL (10,2),
+                        Rubber  DECIMAL (10,2) ,
+                        quantity DECIMAL (10,2)
 );
 
-CREATE TABLE DriverShedeul(
-                              BookingID VARCHAR(30),
-                              DriverNIC VARCHAR(30),
-                              CONSTRAINT FOREIGN KEY(BookingID) REFERENCES Booking(BookingID),
-                              CONSTRAINT FOREIGN KEY(DriverNIC) REFERENCES Driver(DriverNIC),
-                              PRIMARY KEY(BookingID,DriverNIC)
-
+CREATE TABLE Piles(
+                      Id INT PRIMARY KEY,
+                      Temperature  DECIMAL (10,2) ,
+                      WaterLevel  DECIMAL (10,2),
+                      vehiId  VARCHAR (10),
+                      weight DECIMAL (10,2),
+                      council VARCHAR (30)
 );
 
-CREATE TABLE BookingDetail(
-                              BookingID VARCHAR(30),
-                              VehicleNumber VARCHAR(30),
-                              CONSTRAINT FOREIGN KEY(BookingID) REFERENCES Booking(BookingID),
-                              CONSTRAINT FOREIGN KEY(VehicleNumber) REFERENCES Vehicle(VehicleNumber),
-                              PRIMARY KEY(BookingID,VehicleNumber)
+CREATE TABLE Sales(
+                      ID VARCHAR(30) PRIMARY KEY ,
+                      Date date ,
+                      quantity DECIMAL (10,2),
+                      profit DECIMAL (10,2)
 );
 
-CREATE TABLE Payment(
-                        PaymentID VARCHAR(10) PRIMARY KEY,
-                        Status VARCHAR(30) NOT NULL,
-                        PaymentCost DECIMAL (10,2) NOT NULL,
-                        DriverNIC VARCHAR(30),
-                        CONSTRAINT FOREIGN KEY(DriverNIC) REFERENCES Driver(DriverNIC)
-                            ON UPDATE CASCADE ON DELETE CASCADE
+CREATE TABLE Machine(
+                        ID VARCHAR(30) PRIMARY KEY ,
+                        name VARCHAR(30)
 );
 
-CREATE TABLE VehicleIN(
-                          VehicleInID VARCHAR(30) PRIMARY KEY,
-                          VehicleNumber VARCHAR (30) NOT NULL,
-                          DriverNIC VARCHAR(30) NOT NULL,
-                          CurrentDate DATE,
-                          BookingID VARCHAR(30) NOT NULL,
-                          CONSTRAINT FOREIGN KEY(VehicleNumber) REFERENCES Vehicle(VehicleNumber)
-                              ON UPDATE CASCADE ON DELETE CASCADE
+CREATE TABLE EmployeeEquipment(
+
+                                  ID VARCHAR(10) PRIMARY KEY,
+                                  name VARCHAR (30),
+                                  quantity DECIMAL (10,2)
 );
 
-CREATE TABLE VehicleOUt(
-                           VehicleOutID VARCHAR(30) PRIMARY KEY,
-                           VehicleNumber VARCHAR (30) NOT NULL,
-                           DriverNIC VARCHAR(30) NOT NULL,
-                           Distance DECIMAL (10,2) NOT NULL,
-                           BookingID VARCHAR(30) NOT NULL,
-                           CONSTRAINT FOREIGN KEY(VehicleNumber) REFERENCES Vehicle(VehicleNumber)
-                               ON UPDATE CASCADE ON DELETE CASCADE
+CREATE TABLE Chemicals(
+                          ID VARCHAR(30) PRIMARY KEY,
+                          name VARCHAR (30),
+                          quantity DECIMAL (10,2)
 );
 
-CREATE TABLE Billing(
-                        BillID VARCHAR(30) PRIMARY KEY,
-                        BookingID VARCHAR(30),
-                        CustomerNIC VARCHAR(30),
-                        DriverNIC VARCHAR(30),
-                        Cost DECIMAL (10,2),
-                        VehicleNumber VARCHAR(30),
-                        Date DATE ,
-                        CONSTRAINT FOREIGN KEY(BookingID) REFERENCES Booking(BookingID)
-                            ON UPDATE CASCADE ON DELETE CASCADE
+CREATE TABLE SiteVehicle(
+                            ID VARCHAR(30) PRIMARY KEY,
+                            name VARCHAR (30),
+                            repair tinyint(1)
 );
+
 
 select * from Admin;
-select * from Billing;
-select * from Booking;
-select * from Customer;
-select * from Driver;
-select * from BookingDetail;
-select * from DriverShedeul;
-select * from VehicleOUt;
-select * from VehicleOUt;
-select * from Vehicle;
-select * from Payment;
+select * from Employee;
+select * from Health;
+select * from Inventory;
+select * from Compost;
+select * from Piles;
+select * from Sales;
+select * from Machine;
+select * from EmployeeEquipment;
+select * from Chemicals;
+select * from SiteVehicle;
