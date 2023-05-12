@@ -1,5 +1,5 @@
 package pilisaru.util;
 
 public enum Rout {
-    LOGIN
+    LOGIN , COMPOST, ADD_EMP, GET_EMP, UPDATE_EMP
 }

@@ -16,6 +16,10 @@ public class Navigation {
         Stage window = (Stage) Navigation.root.getScene().getWindow();
         switch (rout) {
             case LOGIN -> initUi("menuwindow/menuWindow.fxml");
+            case COMPOST -> initUi("menuControllerCompost/compost.fxml");
+            case ADD_EMP -> initUi("employe/addEmployee.fxml");
+            case GET_EMP -> initUi("employe/employeeInfometion.fxml");
+            case UPDATE_EMP -> initUi("employe/employeeDetailUpdate.fxml");
         }
     }
     private static void initUi(String location) throws IOException {
