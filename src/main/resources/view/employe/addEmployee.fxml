@@ -13,17 +13,17 @@
          <Image url="@../../assets/EmployeeAddInterface.png" />
       </image>
    </ImageView>
-   <TextField layoutX="410.0" layoutY="355.0" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: white; -fx-border-width: 0 0 2 0; -fx-border-color: black;">
+   <TextField fx:id="txtEmpNic" layoutX="410.0" layoutY="355.0" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: white; -fx-border-width: 0 0 2 0; -fx-border-color: black;">
       <font>
          <Font size="16.0" />
       </font>
    </TextField>
-   <TextField layoutX="410.0" layoutY="440.0" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: white; -fx-border-width: 0 0 2 0; -fx-border-color: black;">
+   <TextField fx:id="txtEmpName" layoutX="410.0" layoutY="440.0" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: white; -fx-border-width: 0 0 2 0; -fx-border-color: black;">
       <font>
          <Font size="16.0" />
       </font>
    </TextField>
-   <TextField layoutX="410.0" layoutY="525.0" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: white; -fx-border-width: 0 0 2 0; -fx-border-color: black;">
+   <TextField fx:id="txtEmpAddress" layoutX="410.0" layoutY="525.0" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: white; -fx-border-width: 0 0 2 0; -fx-border-color: black;">
       <font>
          <Font size="16.0" />
       </font>

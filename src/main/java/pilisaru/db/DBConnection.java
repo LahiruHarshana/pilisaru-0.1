@@ -6,14 +6,14 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class DBConnection {
-    private static final String URL=""; // enter hear !
+    private static final String URL="jdbc:mysql://localhost:3306/pilisaru"; // enter hear !
     private static final Properties props=new Properties();
     private static DBConnection dbConnection;
     private static Connection connection;
 
     static {
-        props.setProperty("user", ""); // enter hear !
-        props.setProperty("password", "");
+        props.setProperty("user", "root"); // enter hear !
+        props.setProperty("password", "80221474");
     }
 
     private DBConnection() throws SQLException {

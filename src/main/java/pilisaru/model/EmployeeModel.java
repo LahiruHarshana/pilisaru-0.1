@@ -1,26 +1,14 @@
 package pilisaru.model;
 
-import pilisaru.custom.Crud;
+import pilisaru.dto.Employee;
+import pilisaru.util.CrudUtil;
 
-public class EmployeeModel implements Crud {
+import java.sql.SQLException;
 
-    @Override
-    public boolean save(Object o) {
-        return false;
-    }
-
-    @Override
-    public boolean update(Object o) {
-        return false;
-    }
-
-    @Override
-    public boolean delete(Object o) {
-        return false;
-    }
-
-    @Override
-    public void getAll() {
-
+public class EmployeeModel  {
+    public static boolean save(Employee employee) throws SQLException {
+        String sql="INSERT INTO employee(NIC,Name,Address)" +
+                "VALUES(?, ?, ?)";
+        return CrudUtil.execute(sql,employee.getNic(),employee.getName(),employee.getAddress());
     }
 }
