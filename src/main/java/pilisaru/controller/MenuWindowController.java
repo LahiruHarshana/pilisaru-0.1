@@ -104,7 +104,7 @@ public class MenuWindowController {
 
     @FXML
     void btnPileOnAction(ActionEvent event) throws IOException {
-        //Navigation.navigation(Rout.PILE,mainAncorPane);
+        Navigation.navigation(Rout.PILE,mainAncorPane);
     }
 
     @FXML
