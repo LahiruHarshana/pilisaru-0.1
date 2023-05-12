@@ -18,7 +18,6 @@ public class Main extends Application {
         stage.setTitle("Pilisaru");
         stage.setResizable(false);
         stage.centerOnScreen();
-
         stage.show();
     }
 
