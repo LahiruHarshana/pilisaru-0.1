@@ -8,7 +8,7 @@ import java.sql.SQLException;
 public class SQLutil {
     public static <T>T execute(String sql, Object... args) throws SQLException {
         PreparedStatement pstm = DBConnection.getInstance().getConnection()
-                .parepareStatement(sql);
+                .prepareStatement(sql);
 
         for (int i = 0; i < args.length; i++) {
             pstm.setObject((i+1), args[i]);
