@@ -24,7 +24,7 @@ public class HomeWindowController{
 
     }
     public void btnPileOnAction() throws IOException  {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/employe/addEmployee.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/employe/addEmployee.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         try {
@@ -38,7 +38,7 @@ public class HomeWindowController{
     }
 
     public void btnHomeOnAction () throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/homePage/homeForm.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/homePage/homeForm.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         try {

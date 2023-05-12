@@ -24,7 +24,7 @@ public class StartWindowCcontroller {
         int number = Integer.parseInt(check);
         passwordField.setText("");
 
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/homeWindow.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/homeWindow.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         int password = 2002;

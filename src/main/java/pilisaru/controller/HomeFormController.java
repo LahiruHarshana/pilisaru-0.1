@@ -13,7 +13,7 @@ public class HomeFormController {
 
     public void btnSingOutOnAction() throws IOException {
         Stage satge1=new Stage();
-        satge1.setScene(new Scene(FXMLLoader.load(getClass().getResource("../interface/login/LoginForm.fxml"))));
+        satge1.setScene(new Scene(FXMLLoader.load(getClass().getResource("../../../resources/view/login/LoginForm.fxml"))));
         satge1.getIcons().add(new Image("lk/ijse/homewindow/assepts/20230130_225918.png"));
         satge1.setTitle("Pilisaru Management System");
         satge1.show();

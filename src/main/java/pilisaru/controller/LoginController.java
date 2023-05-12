@@ -1,6 +1,5 @@
 package pilisaru.controller;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -44,7 +43,7 @@ public class LoginController {
         if(password == number && name.equals("zyko")){
 
             try {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/menuwindow/menuWindow.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/menuwindow/menuWindow.fxml"));
                 registerPane = fxmlLoader.load();
                 mainframethisWindow.getChildren().clear();
                 mainframethisWindow.getChildren().setAll(registerPane);
@@ -60,7 +59,7 @@ public class LoginController {
         }
         if(4<=chance){
             signbit.setDisable(true);
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/login/errorForm.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/login/errorForm.fxml"));
             registerPane=fxmlLoader.load();
             mainframethisWindow.getChildren().clear();
             mainframethisWindow.getChildren().setAll(registerPane);

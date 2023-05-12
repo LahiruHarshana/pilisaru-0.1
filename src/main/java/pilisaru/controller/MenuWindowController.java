@@ -37,7 +37,7 @@ public class MenuWindowController {
     public MenuItem btnselesAddDetail;
 
     public void btnHomeOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/homePage/homeForm.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/homePage/homeForm.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         try {
@@ -50,7 +50,7 @@ public class MenuWindowController {
     }
 
     public void btnPileOnAction(ActionEvent actionEvent) throws IOException {// button pile
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/pile/pileinterface.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/pile/pileinterface.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         try {
@@ -63,7 +63,7 @@ public class MenuWindowController {
     }
 
     public void btnCompostOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/menuControllerCompost/compost.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/menuControllerCompost/compost.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         try {
@@ -76,7 +76,7 @@ public class MenuWindowController {
     }
 
     public void btnInventoruOnAction(ActionEvent actionEvent) throws IOException {// inventory
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/inventory/maininventory.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/inventory/maininventory.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         try {
@@ -99,7 +99,7 @@ public class MenuWindowController {
     }
 
     public void menuHelthUpdateOnAction(ActionEvent actionEvent) throws IOException {// health
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/health/addForm.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/health/addForm.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         try {
@@ -112,7 +112,7 @@ public class MenuWindowController {
     }
 
     public void menuHelthGetInfoOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/health/employeeForm.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/health/employeeForm.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         try {
@@ -125,7 +125,7 @@ public class MenuWindowController {
     }
 
     public void btnSalaryUpdateOnAction(ActionEvent actionEvent) throws IOException { //salary
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/salary/salaryUpdateForm.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/salary/salaryUpdateForm.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         try {
@@ -138,7 +138,7 @@ public class MenuWindowController {
     }
 
     public void btnSalaryGetInfoOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/salary/salaryForm.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/salary/salaryForm.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         try {
@@ -151,7 +151,7 @@ public class MenuWindowController {
     }
 
     public void btnVehicalAddOnAction(ActionEvent actionEvent) throws IOException {// vehicle
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/vehical/addVehicle.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/vehical/addVehicle.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         try {
@@ -164,7 +164,7 @@ public class MenuWindowController {
     }
 
     public void btnVehicalUpdateOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/vehical/updateVehicle.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/vehical/updateVehicle.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         try {
@@ -177,7 +177,7 @@ public class MenuWindowController {
     }
 
     public void btnVehicalGetInfoOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/vehical/vehicleInformation.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/vehical/vehicleInformation.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         try {
@@ -190,7 +190,7 @@ public class MenuWindowController {
     }
 
     public void btnEmployeeUpdateOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/employe/employeeDetailUpdate.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/employe/employeeDetailUpdate.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         try {
@@ -203,7 +203,7 @@ public class MenuWindowController {
     }
 
     public void btnEmployeeAddOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/employe/addEmployee.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/employe/addEmployee.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         try {
@@ -216,7 +216,7 @@ public class MenuWindowController {
     }
 
     public void btnEmployeeGetInfoOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/employe/employeeInfometion.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/employe/employeeInfometion.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         try {
@@ -229,7 +229,7 @@ public class MenuWindowController {
     }
 
     public void btnselesGetInfoOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/sales/salesForm.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/sales/salesForm.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         try {
@@ -242,7 +242,7 @@ public class MenuWindowController {
     }
 
     public void btnseleseAddDetailOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../interface/sales/addForm.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/view/sales/addForm.fxml"));
         Pane registerPane = fxmlLoader.load();
 
         try {
