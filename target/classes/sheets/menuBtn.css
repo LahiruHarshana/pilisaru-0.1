@@ -1,0 +1,196 @@
+#btnMenuHealth{
+    -fx-background-color: #0DC27F;
+    -fx-font-size: 24;
+    -fx-background-radius: 30 30 30 30;
+
+}
+#btnHelthUpdate:hover{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 30 30 30 30;
+}
+#btnHelthUpdate:pressed{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 30 30 30 30;
+}
+
+#btnHelthUpdate.arrow:pressed{
+    -fx-rotate: 180deg;
+}
+#btnHelthUpdate.menu{
+    -fx-background-color: transparent;
+}
+/*----------------------------------------*/
+#btnHelthUpdate {
+    -fx-background-color: #0DC27F;
+    -fx-font-size: 20;
+    -fx-background-radius: 30 30 0 0;
+
+}
+#btnHelthUpdate:hover{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 30 30 0 0;
+}
+#btnHelthUpdate:pressed{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 30 30 0 0;
+}
+/*----------------------------------------*/
+#btnGetinfo {
+    -fx-background-color: #0DC27F;
+    -fx-font-size: 20;
+    -fx-background-radius: 0 0 30 30;
+}
+#btnGetinfo:hover{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 0 0 30 30;
+}
+#btnGetinfo:pressed{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 0 0 30 30;
+}
+/*----------------------------------------*/
+#btnSalaryUpdate {
+    -fx-background-color: #0DC27F;
+    -fx-font-size: 20;
+    -fx-background-radius: 30 30 0 0;
+
+}
+#btnSalaryUpdate:hover{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 30 30 0 0;
+}
+#btnSalaryUpdate:pressed{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 30 30 0 0;
+}
+/*----------------------------------------*/
+#btnSalaryGetInfo {
+    -fx-background-color: #0DC27F;
+    -fx-font-size: 20;
+    -fx-background-radius: 0 0 30 30;
+}
+#btnSalaryGetInfo:hover{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 0 0 30 30;
+}
+#btnSalaryGetInfo:pressed{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 0 0 30 30;
+}
+/*----------------------------------------*/
+#btnVehicalAdd {
+    -fx-background-color: #0DC27F;
+    -fx-font-size: 20;
+    -fx-background-radius: 30 30 0 0;
+
+}
+#btnVehicalAdd:hover{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 30 30 0 0;
+}
+#btnVehicalAdd:pressed{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 30 30 0 0;
+}
+/*----------------------------------------*/
+#btnVehicalUpdate {
+    -fx-background-color: #0DC27F;
+    -fx-font-size: 20;
+    -fx-background-radius: 0 0 0 0;
+}
+#btnVehicalUpdate:hover{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 0 0 0 0;
+}
+#btnVehicalUpdate:pressed{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 0 0 0 0;
+}
+/*----------------------------------------*/
+#btnVehicalAdd1 {
+    -fx-background-color: #0DC27F;
+    -fx-font-size: 20;
+    -fx-background-radius: 0 0 30 30;
+}
+#btnVehicalAdd1:hover{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 0 0 30 30;
+}
+#btnVehicalAdd1:pressed{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 0 0 30 30;
+}
+/*----------------------------------------*/
+#btnselesGetInfo {
+    -fx-background-color: #0DC27F;
+    -fx-font-size: 20;
+    -fx-background-radius: 30 30 0 0;
+
+}
+#btnselesGetInfo:hover{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 30 30 0 0;
+}
+#btnselesGetInfo:pressed{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 30 30 0 0;
+}
+/*----------------------------------------*/
+#btnselesAddDetail {
+    -fx-background-color: #0DC27F;
+    -fx-font-size: 20;
+    -fx-background-radius: 0 0 30 30;
+}
+#btnselesAddDetail:hover{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 0 0 30 30;
+}
+#btnselesAddDetail:pressed{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 0 0 30 30;
+}
+/*----------------------------------------*/
+/*----------------------------------------*/
+#btnEmployeeUpdate {
+    -fx-background-color: #0DC27F;
+    -fx-font-size: 20;
+    -fx-background-radius: 30 30 0 0;
+
+}
+#btnEmployeeUpdate:hover{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 30 30 0 0;
+}
+#btnEmployeeUpdate:pressed{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 30 30 0 0;
+}
+/*----------------------------------------*/
+#btnEmployeeAdd {
+    -fx-background-color: #0DC27F;
+    -fx-font-size: 20;
+    -fx-background-radius: 0 0 0 0;
+}
+#btnEmployeeAdd:hover{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 0 0 0 0;
+}
+#btnEmployeeAdd:pressed{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 0 0 0 0;
+}
+/*----------------------------------------*/
+#btnEmployeeGetInfo {
+    -fx-background-color: #0DC27F;
+    -fx-font-size: 20;
+    -fx-background-radius: 0 0 30 30;
+}
+#btnEmployeeGetInfo:hover{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 0 0 30 30;
+}
+#btnEmployeeGetInfo:pressed{
+    -fx-background-color: #0BA27A;
+    -fx-background-radius: 0 0 30 30;
+}
+/*----------------------------------------*/
