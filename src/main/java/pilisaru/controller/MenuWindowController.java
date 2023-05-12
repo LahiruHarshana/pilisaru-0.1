@@ -108,18 +108,18 @@ public class MenuWindowController {
     }
 
     @FXML
-    void btnSalaryGetInfoOnAction(ActionEvent event) {
-
+    void btnSalaryGetInfoOnAction(ActionEvent event) throws IOException {
+        Navigation.navigation(Rout.GET_SALARY,mainAncorPane);
     }
 
     @FXML
-    void btnSalaryUpdateOnAction(ActionEvent event) {
-
+    void btnSalaryUpdateOnAction(ActionEvent event) throws IOException {
+        Navigation.navigation(Rout.UPDATE_SALARY,mainAncorPane);
     }
 
     @FXML
-    void btnSingOutOnAction(ActionEvent event) {
-
+    void btnSingOutOnAction(ActionEvent event) throws IOException {
+        Navigation.navigation(Rout.LOGOUT,root);
     }
 
     @FXML

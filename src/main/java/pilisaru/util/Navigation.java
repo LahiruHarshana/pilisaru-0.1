@@ -23,6 +23,9 @@ public class Navigation {
             case HOME -> initUi("homePage/homeForm.fxml");
             case INVENTORY_MAIN -> initUi("inventory/maininventory.fxml");
             case PILE -> initUi("pile/pileinterface.fxml");
+            case GET_SALARY -> initUi("salary/salaryForm.fxml");
+            case UPDATE_SALARY -> initUi("salary/salaryUpdateForm.fxml");
+            case LOGOUT -> initUi("login/LoginForm.fxml");
         }
     }
     private static void initUi(String location) throws IOException {
