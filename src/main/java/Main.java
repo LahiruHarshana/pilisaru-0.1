@@ -6,23 +6,20 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.net.URL;
+import java.sql.SQLException;
+import java.time.LocalDateTime;
+import java.util.Objects;
 
 public class Main extends Application {
     @Override
-    public void start(Stage primaryStage) throws Exception {
-        URL recource=getClass().getResource("/view/login/LoginForm.fxml");
-        assert recource != null;
-        Parent parant= FXMLLoader.load(recource);
-        Scene sense=new Scene(parant);
+    public void start(Stage stage) throws Exception {
+        Parent parent= FXMLLoader.load(Objects.requireNonNull(getClass().getResource("view/login/LoginForm.fxml")));
+        stage.setScene(new Scene(parent));
+        stage.setTitle("Pilisaru");
+        stage.setResizable(false);
+        stage.centerOnScreen();
 
-        primaryStage.setScene(sense);
-//        primaryStage.getIcons().add(new Image("lk/ijse/homewindow/assepts/20230130_225918.png"));
-        primaryStage.setTitle("Pilisaru Management System");
-        primaryStage.centerOnScreen();
-        primaryStage.show();
-        System.gc();
+        stage.show();
     }
-    public static void main(String[] args) {
-        launch(args);
-    }
+
 }
