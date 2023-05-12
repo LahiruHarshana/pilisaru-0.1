@@ -20,6 +20,9 @@ public class Navigation {
             case ADD_EMP -> initUi("employe/addEmployee.fxml");
             case GET_EMP -> initUi("employe/employeeInfometion.fxml");
             case UPDATE_EMP -> initUi("employe/employeeDetailUpdate.fxml");
+            case HOME -> initUi("homePage/homeForm.fxml");
+            case INVENTORY_MAIN -> initUi("inventory/maininventory.fxml");
+            case PILE -> initUi("pile/pileinterface.fxml");
         }
     }
     private static void initUi(String location) throws IOException {

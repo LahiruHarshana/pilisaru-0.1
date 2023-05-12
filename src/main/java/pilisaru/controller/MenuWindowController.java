@@ -93,18 +93,18 @@ public class MenuWindowController {
     }
 
     @FXML
-    void btnHomeOnAction(ActionEvent event) {
-
+    void btnHomeOnAction(ActionEvent event) throws IOException {
+        Navigation.navigation(Rout.HOME,mainAncorPane);
     }
 
     @FXML
-    void btnInventoruOnAction(ActionEvent event) {
-
+    void btnInventoruOnAction(ActionEvent event) throws IOException {
+        Navigation.navigation(Rout.INVENTORY_MAIN,mainAncorPane);
     }
 
     @FXML
-    void btnPileOnAction(ActionEvent event) {
-
+    void btnPileOnAction(ActionEvent event) throws IOException {
+        //Navigation.navigation(Rout.PILE,mainAncorPane);
     }
 
     @FXML
