@@ -14,16 +14,16 @@
             <Image url="@../../../assets/AddMachine.png" />
          </image>
       </ImageView>
-      <TextField layoutX="400.0" layoutY="440.0" prefHeight="57.0" prefWidth="350.0" style="-fx-border-width: 0 0 2 0; -fx-background-color: #FFFFFF; -fx-border-color: #000000;">
+      <TextField fx:id="machineNameTxt" layoutX="400.0" layoutY="440.0" onAction="#machineNameTxtOnAction" prefHeight="57.0" prefWidth="350.0" style="-fx-border-width: 0 0 2 0; -fx-background-color: #FFFFFF; -fx-border-color: #000000;">
          <font>
             <Font size="20.0" />
          </font></TextField>
-      <Button id="blue" alignment="CENTER" contentDisplay="CENTER" layoutX="705.0" layoutY="622.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="204.0" style="-fx-background-radius: 75; -fx-background-color: #0BA27A;" stylesheets="@../../../sheets/stylesheet.css" text="ADD" textFill="WHITE">
+      <Button id="blue" fx:id="addBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="705.0" layoutY="622.0" mnemonicParsing="false" onAction="#addBtnOnAction" prefHeight="51.0" prefWidth="204.0" style="-fx-background-radius: 75; -fx-background-color: #0BA27A;" stylesheets="@../../../sheets/stylesheet.css" text="ADD" textFill="WHITE">
          <font>
             <Font name="Avenir Book" size="24.0" />
          </font>
       </Button>
-      <TextField layoutX="400.0" layoutY="360.0" prefHeight="57.0" prefWidth="350.0" style="-fx-border-width: 0 0 2 0; -fx-background-color: #FFFFFF; -fx-border-color: #000000;">
+      <TextField fx:id="machineIdTxt" layoutX="400.0" layoutY="360.0" onAction="#machineIdTxtOnAction" prefHeight="57.0" prefWidth="350.0" style="-fx-border-width: 0 0 2 0; -fx-background-color: #FFFFFF; -fx-border-color: #000000;">
          <font>
             <Font size="20.0" />
          </font>
