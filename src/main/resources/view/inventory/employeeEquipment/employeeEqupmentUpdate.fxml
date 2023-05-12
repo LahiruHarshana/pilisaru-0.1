@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="720.0" prefWidth="986.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.homewindow.controller.EmployeeEqupmentUpdateController">
+<AnchorPane prefHeight="720.0" prefWidth="986.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pilisaru.controller.EmployeeEqupmentUpdateController">
    <ImageView fitHeight="224.0" fitWidth="365.0" layoutX="337.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
       <Image url="@../../../assets/undraw_Portfolio_update_re_jqnp.png" />
    </ImageView>

@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="499.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.homewindow.controller.sensorsController.SensorPanal2Controller">
+<AnchorPane prefHeight="400.0" prefWidth="499.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pilisaru.controller.SensorPanal2Controller">
    <children>
       <Slider fx:id="tempSlider" layoutX="74.0" layoutY="35.0" majorTickUnit="10.0" max="50.0" minorTickCount="5" orientation="VERTICAL" prefHeight="343.0" prefWidth="46.0" showTickLabels="true" showTickMarks="true" />
       <Label fx:id="lblTemp" layoutX="130.0" layoutY="155.0" prefHeight="60.0" prefWidth="100.0">
