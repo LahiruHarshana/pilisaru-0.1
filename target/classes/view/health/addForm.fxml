@@ -16,13 +16,8 @@
             <Image url="@../../assets/Update%20Health.png" />
          </image>
       </ImageView>
-        <ComboBox layoutX="460.0" layoutY="141.0" prefHeight="41.0" prefWidth="249.0" style="-fx-background-color: white; -fx-background-radius: 35 35 35 35; -fx-border-color: black; -fx-border-radius: 35 35 35 35;" />
+        <ComboBox fx:id="cmbEmp" layoutX="460.0" layoutY="141.0" prefHeight="41.0" prefWidth="249.0" style="-fx-background-color: white; -fx-background-radius: 35 35 35 35; -fx-border-color: black; -fx-border-radius: 35 35 35 35;" />
       <Button id="blue" fx:id="updatebtn" layoutX="785.0" layoutY="615.0" mnemonicParsing="false" onAction="#buttonPressed" style="-fx-background-color: #0BA27A; -fx-background-radius: 30 30 30 30; -fx-border-radius: 30 30 30 30;" stylesheets="@../../sheets/stylesheet.css" text="UPDATE" />
-      <Button fx:id="addbutton" layoutX="481.0" layoutY="435.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="39.0" prefWidth="50.0" style="-fx-border-radius: 60 60 60 60; -fx-background-radius: 75 75 75 75;" text="+">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
       <Text fill="#a4a2a2" layoutX="412.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload the file here">
          <font>
             <Font name="Comic Sans MS" size="20.0" />
