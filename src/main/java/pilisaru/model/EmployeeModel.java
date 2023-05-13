@@ -32,7 +32,7 @@ public class EmployeeModel  {
     }
 
     public static Employee getAll(String nic) throws SQLException {
-        String sql="SELECT * FROM employee WHERE NIC=?";
+        String sql="SELECT Name,Address FROM employee WHERE NIC=?";
 
         ResultSet resultSet=CrudUtil.execute(sql,nic);
 
