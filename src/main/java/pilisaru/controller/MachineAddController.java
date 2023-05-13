@@ -2,6 +2,7 @@ package pilisaru.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import pilisaru.dto.Machine;
@@ -21,11 +22,10 @@ public class MachineAddController {
 
     @FXML
     void addBtnOnAction(ActionEvent event) {
-        Machine machine=new Machine(machineIdTxt.getText(),machineNameTxt.getText());
         try {
-            boolean addMachine= MachineModel.add(machine);
+            boolean addMachine= MachineModel.add(new Machine(machineIdTxt.getText(),machineNameTxt.getText()));
             if(addMachine){
-                System.out.println("add");
+                new Alert(Alert.AlertType.CONFIRMATION,"Added !").show();
             }
         } catch (SQLException e) {
             e.printStackTrace();
