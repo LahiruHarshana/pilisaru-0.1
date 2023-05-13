@@ -12,7 +12,7 @@
          <Image url="@../../assets/EmployeeInfo.png" />
       </image>
    </ImageView>
-   <ComboBox layoutX="439.0" layoutY="362.0" prefHeight="44.0" prefWidth="328.0" style="-fx-background-color: white; -fx-background-radius: 35px; -fx-border-radius: 35px; -fx-border-color: black;" />
-   <TextField layoutX="421.0" layoutY="442.0" prefHeight="44.0" prefWidth="368.0" style="-fx-background-color: white; -fx-border-width: 0 0 2 0; -fx-border-color: black;" />
-   <TextField layoutX="421.0" layoutY="533.0" prefHeight="44.0" prefWidth="368.0" style="-fx-background-color: white; -fx-border-width: 0 0 2 0; -fx-border-color: black;" />
+   <ComboBox fx:id="cmbNic" layoutX="439.0" layoutY="362.0" onAction="#cmbNicOnAction" prefHeight="44.0" prefWidth="328.0" style="-fx-background-color: white; -fx-background-radius: 35px; -fx-border-radius: 35px; -fx-border-color: black;" />
+   <TextField fx:id="txtEmpName" layoutX="421.0" layoutY="442.0" prefHeight="44.0" prefWidth="368.0" style="-fx-background-color: white; -fx-border-width: 0 0 2 0; -fx-border-color: black;" />
+   <TextField fx:id="txtEmpAddress" layoutX="421.0" layoutY="533.0" prefHeight="44.0" prefWidth="368.0" style="-fx-background-color: white; -fx-border-width: 0 0 2 0; -fx-border-color: black;" />
 </AnchorPane>
