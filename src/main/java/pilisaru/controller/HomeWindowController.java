@@ -86,6 +86,6 @@ public class HomeWindowController {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        initialize();
+//        initialize();
     }
 }
