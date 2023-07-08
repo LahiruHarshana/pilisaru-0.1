@@ -1,10 +1,7 @@
 package pilisaru.controller;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import pilisaru.dto.Vehicle;
 import pilisaru.model.VehicleModel;
 
@@ -18,7 +15,9 @@ public class updateController {
 
     public void btnUpdateOnAction(ActionEvent actionEvent) {
         try {
-            VehicleModel.update(new Vehicle(cmbVehicleNum.getValue()+"",txtCouncil.getText(),String.valueOf(txtWeight.getValue())));
+            boolean update = VehicleModel.update(new Vehicle(cmbVehicleNum.getValue() + "", txtCouncil.getText(), String.valueOf(txtWeight.getValue())));
+            if (update)
+                new Alert(Alert.AlertType.CONFIRMATION,"updated !").show();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

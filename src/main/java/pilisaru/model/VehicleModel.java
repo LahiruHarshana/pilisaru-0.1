@@ -13,11 +13,10 @@ public class VehicleModel {
         return CrudUtil.execute(sql,vehicle.getNumber(),vehicle.getCouncile(),vehicle.getWaigth());
     }
 
-    public static void update(Vehicle vehicle) throws SQLException {
+    public static boolean update(Vehicle vehicle) throws SQLException {
         String sql="UPDATE vehicle SET council=? ,waigth=?" +
                 "WHERE vehiclenumber=?";
-
-        CrudUtil.execute(sql,vehicle.getCouncile(),vehicle.getWaigth(),vehicle.getNumber());
+       return CrudUtil.execute(sql, vehicle.getCouncile(), vehicle.getWaigth(), vehicle.getNumber());
     }
 
     public static Vehicle getNumWise(String s) throws SQLException {
