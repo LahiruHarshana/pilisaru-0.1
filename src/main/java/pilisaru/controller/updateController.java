@@ -25,6 +25,12 @@ public class updateController {
     }
 
     public void cmbVehicleNumOnAction(ActionEvent actionEvent) {
-        VehicleModel.getNumWise(cmbVehicleNum.getValue()+"");
+        try {
+            Vehicle numWise = VehicleModel.getNumWise(cmbVehicleNum.getValue() + "");
+            txtCouncil.setText(numWise.getWaigth());
+            txtWeight.setValue(numWise.getWaigth());
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

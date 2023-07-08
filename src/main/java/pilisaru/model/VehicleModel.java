@@ -3,6 +3,7 @@ package pilisaru.model;
 import pilisaru.dto.Vehicle;
 import pilisaru.util.CrudUtil;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class VehicleModel {
@@ -19,7 +20,10 @@ public class VehicleModel {
         CrudUtil.execute(sql,vehicle.getCouncile(),vehicle.getWaigth(),vehicle.getNumber());
     }
 
-    public static void getNumWise(String s) {
+    public static Vehicle getNumWise(String s) throws SQLException {
+        String sql ="SELECT * FROM vehicle where vehicle number= ?";
+        ResultSet resultSet = CrudUtil.execute(sql,s);
 
+        return new Vehicle(resultSet.getString(1) ,resultSet.getString(2),resultSet.getString(3));
     }
 }
