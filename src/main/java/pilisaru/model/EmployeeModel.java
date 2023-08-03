@@ -14,7 +14,7 @@ public class EmployeeModel  {
                 "VALUES(?, ?, ?)";
         return CrudUtil.execute(sql,employee.getNic(),employee.getName(),employee.getAddress());
     }
-
+//test
     public static boolean update(Employee employee) throws SQLException {
         String sql="UPDATE employee SET Name=? ,Address=?" +
                 "WHERE NIC=?";
