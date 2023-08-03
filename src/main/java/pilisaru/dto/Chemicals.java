@@ -9,4 +9,7 @@ public class Chemicals {
     private String id;
     private String name;
     private Double quantity;
+    //test1
+    void test(){}
 }
+
