@@ -42,6 +42,8 @@ To get started with Pilisaru, follow these steps:
    ```bash
     npm start
     ```
+   
+## Contributions
 
 
 
