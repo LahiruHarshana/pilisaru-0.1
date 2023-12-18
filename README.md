@@ -19,3 +19,5 @@ Pilisaru offers robust solutions to tackle the challenges associated with waste 
 2. **Data-Driven Insights**: Pilisaru leverages data analytics to provide insights into garbage generation patterns, enabling informed decision-making for waste management strategies.
 
 3. **User-Friendly Interface**: The intuitive user interface ensures easy navigation and accessibility, encouraging widespread adoption of responsible waste disposal practices.
+
+## Getting Started
