@@ -34,6 +34,7 @@ To get started with Pilisaru, follow these steps:
    ```bash
     npm install
     ```
+3. **Configuration**: Customize the configuration files to suit your institute's requirements.
 
 
 
