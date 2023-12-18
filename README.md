@@ -11,3 +11,5 @@ Pilisaru is an innovative software solution developed by the talented team from 
 - **Inovesta Recognition**: The project received acclaim at the Inovesta event, winning the Team Spirit Award. This recognition underscores the collaborative and innovative efforts of the development team.
 
 ## Solutions
+
+Pilisaru offers robust solutions to tackle the challenges associated with waste management:
