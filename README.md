@@ -45,5 +45,5 @@ To get started with Pilisaru, follow these steps:
    
 ## Contributions
 
-
+We welcome contributions from the community to enhance Pilisaru further. If you have ideas for improvements or would like to report issues, please create a new issue or submit a pull request.
 
