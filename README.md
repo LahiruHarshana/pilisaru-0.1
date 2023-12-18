@@ -26,4 +26,8 @@ To get started with Pilisaru, follow these steps:
 
 1. **Installation**: Clone the repository to your local machine.
 
+     ```bash
+    git clone https://github.com/your-username/pilisaru.git
+    ```
+
 
