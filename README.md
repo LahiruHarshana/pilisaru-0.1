@@ -39,4 +39,9 @@ To get started with Pilisaru, follow these steps:
 
 4. **Run the Application**: Launch the Pilisaru software.
 
+       ```bash
+    npm start
+    ```
+
+
 
