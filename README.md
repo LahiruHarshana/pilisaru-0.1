@@ -48,3 +48,9 @@ To get started with Pilisaru, follow these steps:
 We welcome contributions from the community to enhance Pilisaru further. If you have ideas for improvements or would like to report issues, please create a new issue or submit a pull request.
 
 ## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Thank you for choosing Pilisaru for your garbage management needs! For more information and support, contact our development team at lharshana2002@gmail.com.
