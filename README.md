@@ -13,3 +13,6 @@ Pilisaru is an innovative software solution developed by the talented team from 
 ## Solutions
 
 Pilisaru offers robust solutions to tackle the challenges associated with waste management:
+
+1. **Smart Waste Disposal**: The software introduces smart waste disposal mechanisms, optimizing the collection and disposal of garbage.
+
