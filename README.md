@@ -21,3 +21,6 @@ Pilisaru offers robust solutions to tackle the challenges associated with waste 
 3. **User-Friendly Interface**: The intuitive user interface ensures easy navigation and accessibility, encouraging widespread adoption of responsible waste disposal practices.
 
 ## Getting Started
+
+To get started with Pilisaru, follow these steps:
+
