@@ -31,5 +31,10 @@ To get started with Pilisaru, follow these steps:
     ```
 2. **Dependencies**: Install the necessary dependencies.
 
+   ```bash
+    npm install
+    ```
+
+
 
 
