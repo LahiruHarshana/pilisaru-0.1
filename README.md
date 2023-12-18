@@ -24,3 +24,6 @@ Pilisaru offers robust solutions to tackle the challenges associated with waste 
 
 To get started with Pilisaru, follow these steps:
 
+1. **Installation**: Clone the repository to your local machine.
+
+
