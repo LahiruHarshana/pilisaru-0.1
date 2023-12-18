@@ -29,5 +29,7 @@ To get started with Pilisaru, follow these steps:
      ```bash
     git clone https://github.com/LahiruHarshana/pilisaru.git
     ```
+2. **Dependencies**: Install the necessary dependencies.
+
 
 
