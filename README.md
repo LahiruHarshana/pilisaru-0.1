@@ -37,5 +37,6 @@ To get started with Pilisaru, follow these steps:
 3. **Configuration**: Customize the configuration files to suit your institute's requirements.
 
 
+4. **Run the Application**: Launch the Pilisaru software.
 
 
