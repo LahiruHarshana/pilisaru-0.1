@@ -16,3 +16,6 @@ Pilisaru offers robust solutions to tackle the challenges associated with waste 
 
 1. **Smart Waste Disposal**: The software introduces smart waste disposal mechanisms, optimizing the collection and disposal of garbage.
 
+2. **Data-Driven Insights**: Pilisaru leverages data analytics to provide insights into garbage generation patterns, enabling informed decision-making for waste management strategies.
+
+
